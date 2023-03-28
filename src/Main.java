@@ -1,3 +1,5 @@
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import java.io.*;
@@ -67,5 +69,41 @@ public class Main {
         } finally {
             System.out.println("Server Avslutas!");
         }
+    }
+
+
+static String openData(String message) throws ParseException, IOException {
+    System.out.println(message);
+    //Bygger upp JSON objekt baserat på inkommande string
+    JSONParser parser = new JSONParser();
+    JSONObject jsonOb = (JSONObject) parser.parse(message);
+
+    //Läser av URL och HTTP-metod för att veta vad klienten vill
+    String url = jsonOb.get("httpURL").toString();
+    String method = jsonOb.get("httpMethod").toString();
+
+    //Delar upp URL med .split() metod
+    String[] urls = url.split("/");
+
+    // Använder en switch case för att kolla vilken data som ska användas
+    if ("persons".equals(urls[0])) {
+        if (method.equals("get")) {
+            //Vill hämta data om personer
+            //TODO lägga till logik om det är specifik person som ska hämtas
+
+            //Skapar JSONReturn objektet
+            JSONObject jsonReturn = new JSONObject();
+
+            //Hämtar data från JSON fil
+            jsonReturn.put("data", parser.parse(new FileReader("data/characters.json")).toString());
+
+            //Inkluderar HTTPStatusCode
+            jsonReturn.put("httpStatusCode", 200);
+
+            //Returnerar
+            return jsonReturn.toJSONString();
+            }
+        }
+    return "Message received";
     }
 }
