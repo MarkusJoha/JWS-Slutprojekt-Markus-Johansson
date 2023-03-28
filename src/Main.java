@@ -21,7 +21,7 @@ public class Main {
         //Startar servern
         try {
             //Kontrollerar att Socket numret är ledigt, avbryter om socket är upptagen
-            serverSocket = new ServerSocket(69420);
+            serverSocket = new ServerSocket(7648);
             System.out.println(serverSocket.getInetAddress());
             System.out.println(serverSocket.getLocalSocketAddress());
         } catch (IOException e) {
