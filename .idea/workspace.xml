@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28aad077-9f74-460d-b6ba-8ed0607601dd" name="Changes" comment="First commit and initialized the server">
+    <list default="true" id="28aad077-9f74-460d-b6ba-8ed0607601dd" name="Changes" comment="changed the port location">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/characters.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/characters.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +28,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Marku/OneDrive/Skrivbord/Java Web Services/json-simple-1.1.1.jar",
+    "last_opened_file_path": "C:/Users/Marku/OneDrive/Skrivbord/Java Web Services/Inlämningsuppgift/Server",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -53,7 +56,19 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1680003346476</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Added a function that returns the json data within the server according to the clients choice">
+      <created>1680005331545</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1680005331545</updated>
+    </task>
+    <task id="LOCAL−00004" summary="changed the port location">
+      <created>1680005433579</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1680005433579</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -69,6 +84,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit and initialized the server" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit and initialized the server" />
+    <MESSAGE value="Added a function that returns the json data within the server according to the clients choice" />
+    <MESSAGE value="changed the port location" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the port location" />
   </component>
 </project>

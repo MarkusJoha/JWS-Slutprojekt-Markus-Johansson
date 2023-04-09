@@ -82,11 +82,11 @@ static String openData(String message) throws ParseException, IOException {
     String url = jsonOb.get("httpURL").toString();
     String method = jsonOb.get("httpMethod").toString();
 
-    //Delar upp URL med .split() metod
+    //Delar upp URL med.split() metod
     String[] urls = url.split("/");
 
     // Använder en switch case för att kolla vilken data som ska användas
-    if ("persons".equals(urls[0])) {
+
         if (method.equals("get")) {
             //Vill hämta data om personer
             //TODO lägga till logik om det är specifik person som ska hämtas
@@ -103,7 +103,7 @@ static String openData(String message) throws ParseException, IOException {
             //Returnerar
             return jsonReturn.toJSONString();
             }
-        }
+
     return "Message received";
     }
 }

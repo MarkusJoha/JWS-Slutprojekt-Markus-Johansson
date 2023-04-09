@@ -1,14 +1,26 @@
 {
-    "char1":{
-        "name":"Filkurk",
-        "level":5,
-        "class":"Barbarian",
-        "race":"Half-orc"
+    "char1": {
+      "name": "Filkurk",
+      "level": 5,
+      "class": "Barbarian",
+      "race": "Half-orc"
     },
-    "char2":{
-        "name":"Landon",
-        "level":4,
-        "class":"Paladin",
-        "race":"Human"
+    "char2": {
+      "name": "Landon",
+      "level": 4,
+      "class": "Paladin",
+      "race": "Tiefling"
+    },
+    "char3": {
+      "name": "Gizmo",
+      "level": 7,
+      "class": "Cleric",
+      "race": "Gnome"
+    },
+    "char4": {
+      "name": "Fullgrim",
+      "level": 16,
+      "class": "Warlock",
+      "race": "Dwarf"
     }
 }
